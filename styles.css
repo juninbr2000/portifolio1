@@ -11,6 +11,10 @@ body{
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    color: #000;
+}
+.dark{
+    color: #fff;
 }
 
 .container{
@@ -132,15 +136,96 @@ body{
     background-color: #161616;
 }
 
-@media screen and (max-width: 850px) {
+
+.area-hability{
+    margin-top: 70px;
+    padding: 30px 40px;
+    background-color: #efefef;
+}
+.dark .area-hability{
+    background-color: #0f0f0f;
+}
+.section-title{
+    font-size: 28px;
+    font-weight: 700;
+    padding: 5px 0;
+    border-bottom: 1px solid;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 70px;
+}
+.card{
+    text-align: center;
+    font-size: 22px;
+    width: 30%;
+    min-width: 180px;
+    background-color: #dfdfdf;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 20px #aaa;
+    color: #777;
+    transition: all .3s ease;
+    & i{
+        font-size: 80px;
+        margin-bottom: 15px;
+    }
+}
+.dark .card{
+    background-color: #161616;
+    box-shadow: 0px 2px 20px #000;
+}
+.card:hover{
+    color: var(--destaque-color--);
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 550px) {
+    #particles-js{
+        height: 140vh;
+        top: 70px;
+    }
     .top-header{
         flex-direction: column;
+        padding: 20px;
         & .info-container{
             width: 100%;
-            padding: 20px 40px;
+            padding: 20px;
+            margin-bottom: 100px;
+            margin-top: 80px;
+            & .logo{
+                font-size: 30px;
+            }
+            & h2{
+                font-size: 20px;
+            }
+            .buttons-container .primary, .secondary{
+                padding: 8px 20px;
+                font-size: 16px;
+            }
         }
         & .image-container{
             width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .area-hability .card-container{
+        padding: 20px 0;
+        justify-content: space-around;
+        & .card{
+            font-size: 16px;
+            min-width: 120px;
+            width: 20%;
+            padding: 15px 10px;
+            & i{
+                font-size: 30px;
+            }
         }
     }
 }
