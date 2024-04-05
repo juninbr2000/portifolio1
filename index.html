@@ -11,99 +11,81 @@
     <link rel="stylesheet" href="styles.css">
     <title>Edson Jr | Portifolio</title>
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
     <div class="container">
         <nav class="top-nav">
-            <div class="logo_area">
-                <h2 class="logo">&#60;EJr./&#62;</h2>
-                <p>Font-end Developer</p>
-            </div>
-            <div class="button-theme">
-                <p>dark/light</p>
-                <button id="mode"><i class="fa-solid fa-sun"></i></button>
+            <h1 class="logo">&#60;EJR/&#62;<span>Front-End Developer</span></h1>
+
+            <div class="button-area">
+                <p>ligth/dark:</p>
+                <button id="mode"></button>
             </div>
         </nav>
-        <header class="header-banner">
-            <div>
-                <h1 class="logo"><span>&#60;Edson Júnior/&#62;</span></h1>
-                <p>Front-end developer</p>
-                <div class="buttons-area">
-                    <button class="primary-button">Contratar</button>
-                    <a href="#projects" class="secondary-button">Projetos</a>
+        <header class="top-header">
+            <div class="info-container">
+                <h1 class="logo">&#60;Edson Junior/&#62;</h1>
+                <h2>Front-End Developer</h2>
+                
+                <div class="buttons-container">
+                    <button class="primary">Contato</button>
+                    <button class="secondary">Projetos</button>
                 </div>
             </div>
-            <div class="design">
-
+            <div class="image-container">
+                <img src="./assets/vecteezy_digital-marketing-3d-icon-illustration-for-your-website_9418801.png" alt="">
             </div>
         </header>
-        <section class="hability-section">
-            <h2 class="section-title">Habilidades: </h2>
-            <div class="itens-container">
-                <div class="card html">
+        <section class="area-hability">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="card-container">
+                <div class="card">
                     <i class="fa-brands fa-html5"></i>
-                    <p>HTML</p>
+                    <h3 class="title-card">Html5</h3>
                 </div>
-                <div class="card css">
+                <div class="card">
                     <i class="fa-brands fa-css3"></i>
-                    <p>CSS</p>
+                    <h3 class="title-card">Css3</h3>
                 </div>
-                <div class="card js">
+                <div class="card">
                     <i class="fa-brands fa-js"></i>
-                    <p>JavaScript</p>
+                    <h3 class="title-card">JavaScript</h3>
                 </div>
-                <div class="card react">
+                <div class="card">
                     <i class="fa-brands fa-react"></i>
-                    <p>React</p>
+                    <h3 class="title-card">React-Js</h3>
                 </div>
-                <div class="card ts">
+                <div class="card">
                     <i class='bx bxl-typescript'></i>
-                    <p>TypeScript</p>
+                    <h3 class="title-card">TypeScrit</h3>
                 </div>
-                <div class="card git">
-                    <i class="fa-brands fa-git-alt"></i>
-                    <p>Git</p>
+                <div class="card">
+                    <i class='fa-brands fa-git-alt'></i>
+                    <h3 class="title-card">Git</h3>
                 </div>
             </div>
         </section>
-        <section>
-            <h2 class="section-title">Projetos: </h2>
-            <div class="projects-container">
-                <div class="project">
-                    <img src="./assets/WhatsApp Image 2024-04-01 at 14.58.42.jpeg" alt="">
-                    <div class="info">
-                        <h2>allDes.</h2>
-                        <a href="#" class="primary-button" target="_blank">Ver site</a>
-                        <a href="#" class="secondary-button" target="_blank"><i class="fa-brands fa-github"></i>Ver no Github</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="./assets/WhatsApp Image 2024-04-01 at 14.59.33.jpeg" alt="">
-                    <div class="info">
-                        <h2>App Previsão do tempo</h2>
-                        <a href="#" class="primary-button" target="_blank">Ver site</a>
-                        <a href="#" class="secondary-button" target="_blank"><i class="fa-brands fa-github"></i>Ver no Github</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="assets/WhatsApp Image 2024-04-01 at 15.00.08.jpeg" alt="">
-                    <div class="info">
-                        <h2>LbMovies</h2>
-                        <a href="#" class="primary-button" target="_blank">Ver site</a>
-                        <a href="#" class="secondary-button" target="_blank"><i class="fa-brands fa-github"></i>Ver no Github</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="assets/WhatsApp Image 2024-04-01 at 15.00.58.jpeg" alt="">
-                    <div class="info">
-                        <h2>LinkScape</h2>
-                        <a href="#" class="primary-button" target="_blank">Ver site</a>
-                        <a href="#" class="secondary-button" target="_blank"><i class="fa-brands fa-github"></i>Ver no Github</a>
+
+        <section class="projects-area">
+            <h2 class="section-title">Principais Projetos</h2>
+            <div class="projects">
+                <img src="./assets/WhatsApp Image 2024-04-01 at 15.00.08.jpeg" alt="">
+                <div class="info-project">
+                    <h3 class="title">LBMovies</h3>
+                    <p>Neste projeto foi utilizado a API do TMDB, que é uma API que disponibiliza informaçoes sobre filmes e series, tambem foi utilizado o React na criaçao da pagina, alem de HTML e CSS.</p>
+                    <div>
+                        <a href="#"><i class="fa-solid fa-link"></i>Ver Site</a>
+                        <a href="#"><i class="fa-brands fa-github"></i>Ver no github</a>
                     </div>
                 </div>
             </div>
-            <a href="#" class="primary-button">Ver mais</a>
         </section>
+        
+
+        <div id="particles-js"></div>
+
+        <script src="particles.js"></script>
     </div>
 </body>
 </html>
