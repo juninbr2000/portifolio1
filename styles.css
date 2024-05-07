@@ -384,4 +384,13 @@ body{
             margin: 0;
         }
     }
+    .footer-cont{
+        flex-direction: column;
+        padding: 30px 10px;
+        gap: 25px;
+        align-items: flex-start;
+    }
+    .footer-cont > div{
+        width: 100%;
+    } 
 }
