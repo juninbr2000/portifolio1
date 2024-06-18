@@ -330,6 +330,18 @@ body{
         height: 140vh;
         top: 70px;
     }
+    .top-nav{
+        justify-content: space-between;
+        padding: 20px 20px;
+        & .logo{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            & span{
+                display: none;
+            }
+        }
+    }
     .top-header{
         flex-direction: column;
         padding: 20px;
@@ -344,9 +356,12 @@ body{
             & h2{
                 font-size: 20px;
             }
-            .buttons-container .primary, .secondary{
-                padding: 8px 20px;
-                font-size: 16px;
+            & .buttons-container{
+                
+                & .primary, .secondary{
+                    padding: 8px 20px;
+                    font-size: 16px;
+                }
             }
         }
         & .image-container{
@@ -379,10 +394,11 @@ body{
         display: flex;
         flex-direction: column;
         margin-top: 10px;
-        align-items: flex-start;
         gap: 15px;
+        text-align: center;
         & .secondary{
             margin: 0;
+            letter-spacing: 0px;
         }
     }
     .footer-cont{
@@ -394,4 +410,8 @@ body{
     .footer-cont > div{
         width: 100%;
     } 
+    .social{
+        padding: 20px 10px;
+        border: none;
+    }
 }
